@@ -1,0 +1,2 @@
+# AutomataZoo
+Automata Benchmark Suite
