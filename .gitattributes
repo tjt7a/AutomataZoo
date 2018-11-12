@@ -1,0 +1,2 @@
+*.v filter=lfs diff=lfs merge=lfs -text
+*.anml filter=lfs diff=lfs merge=lfs -text

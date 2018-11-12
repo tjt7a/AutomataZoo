@@ -1,0 +1,12 @@
+Model.num_estimators:20
+Mean class time:2.65794942379
+input_stacking:100
+Test.num_features:200
+Test.num_samples:23100
+Model.n_jobs:4
+Iterations:10.0
+Model:model.pickle
+kthroughput:869.091029093
+Std class time:0.0644851463665
+Model.max_leaf_ndoes:800
+num_jobs:12
