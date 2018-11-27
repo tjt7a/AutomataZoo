@@ -1,0 +1,104 @@
+ 
+Input license/permission information:
+
+
+==================================================================================
+Viruse fragments were from the website virussign.com
+Terms and Conditions: http://virussign.com/terms.html
+
+Virus file name:
+  virussign.com_92f75c0b0ed23a42cee37c09a13aace0.vir
+Virus strain:
+  win.worm.Mydoom-5
+Saturday, November 14, 2015  5:48 PM     74851379 VirusSignList_Free_151115.zip
+  
+  
+Virus file name:
+  virussign.com_0cdf02304ebfa49679f7db62037872e0.vir
+Virus strain:
+  win.worm.Autorun-313
+Monday, November 23, 2015  5:37 PM     95855080 VirusSignList_Free_151124.zip
+
+Usage permission was granted by David Wood <davidwood511@hotmail.com>.
+==================================================================================
+
+Code:
+
+All code files except python scripts and shell scripts are from Hyperscan open source project: 
+https://github.com/intel/hyperscan
+License Link: https://github.com/intel/hyperscan/blob/master/LICENSE
+
+All python scripts and shell scripts are from:
+https://github.com/LingxiWu/Snort_Generation
+It's an open-source, no license required, project.
+
+Media:
+
+  Audio:
+  
+  Y=MX+B.mp3
+  Download Link: https://sampleswap.org/mp3/song.php?id=105
+  License: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  
+  Sunny9.mp3
+  Download Link: https://sampleswap.org/mp3/song.php?id=105
+  License: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  
+  2D.mp3
+  Download Link:https://sampleswap.org/mp3/song.php?id=227
+  License: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  
+  Image:
+    All images are from: https://www.pexels.com/royalty-free-images/
+    License: https://www.pexels.com/photo-license/
+  
+  Video:
+    All video clips were from: https://videos.pexels.com
+    
+    687898845.mp4
+    Download Link: https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/576/8/202884524/687898845.mp4?token=1525472589-0x22d1137b7513c176a3e845befca5b7a92d6c1842
+    
+    722729637,mp4
+    Download Link: https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/2148/8/210741618/722729637.mp4?token=1525472724-0xc58a846332e01565f934f9cc96a0e19df0e0e483
+    
+    748309860.mp4
+    Download Link: https://gcs-vimeo.akamaized.net/exp=1525472750~acl=%2A%2F748309860.mp4%2A~hmac=f42fc47bc725fe3bad2acb990129c3d746460cf20a4b037ad2fb21b41f42b8ee/vimeo-prod-skyfire-std-us/01/3289/8/216445899/748309860.mp4
+    
+    License:https://videos.pexels.com/video-license
+
+  Pdf:
+    clam.pdf:
+    Download Link: https://www.clamav.net/downloads
+    License: https://creativecommons.org/licenses/by-nd/2.5/
+    
+    clamdoc.pdf:
+    Download Link: https://www.clamav.net/downloads
+    License: https://creativecommons.org/licenses/by-nd/2.5/
+    
+    IISWC16_ANMLZoo.pdf:
+    Download Link: http://www.cs.virginia.edu/~skadron/Papers/IISWC16_ANMLZoo.pdf
+    
+    signatures.pdf: Instruction for writing Clamav signatures
+    Download Link: https://www.clamav.net/downloads
+    License: https://creativecommons.org/licenses/by-nd/2.5/ 
+
+==================================================================================
+Txt:
+
+  All txt files are from open source projects. 
+  
+  CHANGELOG.md: a change log for Hyperscan
+  License: https://github.com/intel/hyperscan/blob/master/LICENSE
+  
+  INSTALL.md: Installation Instructions for clamav version 0.99.4
+  Download Link: https://www.clamav.net/downloads
+  License: https://creativecommons.org/licenses/by-nd/2.5/
+  
+  NEWS.md: news, issues, release notes, and other information about clamav version 0.100.0
+  Download Link: https://www.clamav.net/downloads
+  License: https://creativecommons.org/licenses/by-nd/2.5/
+  
+  README.md: Usage instruction for clamav version 0.99.4
+  Download Link: https://www.clamav.net/downloads
+  License: https://creativecommons.org/licenses/by-nd/2.5/
+==================================================================================  
