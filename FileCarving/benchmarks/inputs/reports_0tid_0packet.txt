@@ -1,0 +1,15 @@
+4058302 : __3736__ : MPEG2_program_end
+5329300 : __3734__ : MPEG2_vid_header
+6820564 : __3711__ : E-mail_Address
+7778282 : __3736__ : MPEG2_program_end
+7780053 : __3736__ : MPEG2_program_end
+8469384 : __3711__ : E-mail_Address
+8522255 : __3729__ : JFIF_HEADER
+10095119 : __3729__ : JFIF_HEADER
+10570255 : __3729__ : JFIF_HEADER
+10570651 : __3729__ : JFIF_HEADER
+10574708 : __3729__ : JFIF_HEADER
+10914708 : __3711__ : E-mail_Address
+12278283 : __1578__ : ZIP_Local_File_Header
+12357105 : __2082__ : ZIP_Central_Directory_Header
+12357152 : __3201__ : ZIP_END_Central_Dir_Header

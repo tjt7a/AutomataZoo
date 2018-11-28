@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>Basic Data Carving Test #1</title>
+</head>
+<body bgcolor="#FFFFCC">
+<center>
+  <h2>Basic Data Carving Test #1</h2>
+  <b>(by Nick Mikus)</b><br>
+  <h3>Digital Forensics Tool Testing Image (#11)</h3>
+  <a href="http://dftt.sourceforge.net/"> http://dftt.sourceforge.net</a> 
+</center>
+<h3>Introduction</h3>
+
+<p> This test image is a FAT32 file system and is intended to test
+  data carving
+  tools and their ability to extract various file formats.  The
+  image contains several allocated and deleted files and the header
+  one JPEG file was modified ( to show the importance of ignoring
+  corrupted files).  All files are random files that that were in
+  my possession or that I created from scratch. This image was
+  created from a USB thumb-drive that was wiped and formatted
+  using the <tt>mkfs.vfat</tt> program. The FAT boot sector has been
+  corrupted so that the image cannot be mounted and therefore data carving
+  methods must be used to extract the files. </p>
+
+<h3>Download</h3>
+<p> This test image is a 'raw' partition image (i.e. 'dd') of a FAT32 file system. 
+  The file system is 62MB and is compressed to 11MB. The MD5 of the image is <tt>0069813c892a462f88dc6d376624f7d9</tt>. 
+  This image is released under the <a href="http://www.gnu.org/licenses/licenses.html#GPL"> 
+  GPL</a>, so anyone can use it. </p>
+<ul>
+  <li><a href="http://prdownloads.sourceforge.net/dftt/11-carve-fat.zip?download">zip</a> </li>
+</ul>
+
+<h3>Files</h3>
+<p>The following files and the MD5 hash and description were created on the file system.</p>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="88%">
+  <tr> 
+    <td width=71> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>Num</span></b></p></td>
+    <td width=143> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>Name</span></b></p></td>
+    <td width=272> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>MD5</span></b></p></td>
+    <td width=64 valign=top> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>Size</span></b></p></td>
+    <td width=277> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>Note</span></b></p></td>
+    <td width=157 valign=top> <p class=MsoNormal align=center style='text-align:center;'><b><span
+  style='font-size:10.0pt'>Sectors</span></b></p></td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>1</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>2003_document.doc</span></p></td>
+    <td width=272><pre>e72f388b36f9370f19696b164c308482</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>19968 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A Valid DOC file</span></p></td>
+    <td width=157 valign=top>(0-38) 281 -320</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>2</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>enterprise.wav</span></p></td>
+    <td width=272><pre>7629b89adade055f6783dc1773274215  </pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>318895 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid WAV file</span></p></td>
+    <td width=157 valign=top>(0-622) 16021 -16644</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>3</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>haxor2.jpg</span></p></td>
+    <td width=272><pre>84e1dceac2eb127fef5bfdcb0eae324b</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>24367 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>An invalid JPEG with only 1 header byte corrupted.
+        This byte is located at offset 19 within the file.</span> </p>
+      </td>
+    <td width=157 valign=top>(0-47)16645 -16692</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>4</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>holly.xls</span></p></td>
+    <td width=272><pre>7917baf0219645afef8b381570c41211</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>23040 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid XLS file</span></p></td>
+    <td width=157 valign=top>(0-44) 16693-16738</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>5</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>lin_1.2.pdf</span></p></td>
+    <td width=272><pre>e026ec863410725ba1f5765a1874800d</pre></td>
+    <td width=64 valign=top><pre>1399508</pre> </td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A linearized PDF</span></p></td>
+    <td width=157 valign=top>(0-2733) 16741 -19475</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>6</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>nlin_14.pdf</span></p></td>
+    <td width=272><pre>5b3e806e8c9c06a475cd45bf821af709</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>122434 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A non-linearized PDF</span></p></td>
+    <td width=157 valign=top>(0-239) 19477 -19716</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>7</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>paul.jpg</span></p></td>
+    <td width=272><pre>37a49f97ed279832cd4f7bd002c826a2</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>29885 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid jpeg</span></p></td>
+    <td width=157 valign=top>(0-58) 19717 -19776</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>8</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>pumpkin.jpg</span></p></td>
+    <td width=272><pre>6c9859e5121ff54d5d6298f65f0bf3b3</pre></td>
+    <td width=64 valign=top><pre>444314</pre> </td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid EXIF jpeg </span></p></td>
+    <td width=157 valign=top>(0-867) 19777-20644</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>9</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>shark.jpg</span></p></td>
+    <td width=272><pre>d83428b8742a075b57b0dc424cd297c4</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>99298 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid JPEG</span></p></td>
+    <td width=157 valign=top>(0-193) 20645-20839</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>10</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>sm1.gif</span></p></td>
+    <td width=272><pre>d25fb845e6a41395adaed8bd14db7bf2  </pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>5498 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid GIF</span></p></td>
+    <td width=157 valign=top>(0-10) 20841-20852</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>11</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>surf.mov</span></p></td>
+    <td width=272><pre>5328d2b066f428ea95b2793849ab97fa</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>550653 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid MOV</span></p></td>
+    <td width=157 valign=top>(0-1075) 20853-21928</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>12</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>surf.wmv</span></p></td>
+    <td width=272><pre>ff085d0c4d0e0fdc8f3427db68e26266</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>1036994 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid WMV</span></p></td>
+    <td width=157 valign=top>(0-2025) 21929-23955</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>13</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>test.ppt</span></p></td>
+    <td width=272><pre>7b74c2c608d92f4bb76c1d3b6bd1decc</pre></td>
+    <td width=64 valign=top> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>11264 </span></p></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A deleted PPT</span></p></td>
+    <td width=157 valign=top>(0-21) 23957 -23978</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>14</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>wword60t.zip</span></p></td>
+    <td width=272><pre>c0be59d49b7ee0fdc492d2df32f2c6c6</pre></td>
+    <td width=64 valign=top><pre>78899</pre></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A valid ZIP </span></p></td>
+    <td width=157 valign=top>(0-154) 23981 -24135</td>
+  </tr>
+  <tr> 
+    <td width=71> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>15</span></p></td>
+    <td width=143> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt;font-family:"Courier New"'>domopers.wmv</span></p></td>
+    <td width=272><pre>63c0c6986cf0a446cb54b0ac65a921a5</pre></td>
+    <td width=64 valign=top><pre>8037267</pre></td>
+    <td width=277> <p class=MsoNormal align=left style='text-align:left;'><span
+  style='font-size:10.0pt'>A deleted wmv</span></p></td>
+    <td width=157 valign=top>(0-15697) 321-16018</td>
+  </tr>
+</table>
+<h3>Author</h3>
+Nick Mikus (nick.mikus at gmail.com) created the test cases and the test image. 
+This test was released on March 14, 2005. 
+<h3>Disclaimers</h3>
+<p>This is a simple test case I composed when testing data carving tools. It is 
+  by no means all inclusive.</p>
+<hr>
+<table width="100%" border=0>
+<tr width="100%">
+
+  <td width="33%" align=left>
+  &nbsp;
+  </td>
+  <td width="33%" align="center">
+<a href='http://sourceforge.net'>
+    <img src='http://sourceforge.net/sflogo.php?group_id=105411&amp;type=2'
+    width=80  border=0 alt='SourceForge Logo'>
+
+</a>
+  </td>
+  <td width="33%" align=right>
+    <font size="1">Last Updated: March 14, 2005</font>
+  </td>
+</tr>
+</table>
+
+
+</body>
+</html>
