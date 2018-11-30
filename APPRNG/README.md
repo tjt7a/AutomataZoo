@@ -6,4 +6,4 @@ A Pseudo Random Number Generator (PRNG) is an algorithm that generates a stream 
 
 ## Benchmark
 
-This benchmark contains two benchmark instances: 4_sided and 8_sided PRNG. Each has an automata file and input.
+This benchmark contains two benchmark instances: 4_sided and 8_sided PRNG automata. Each has an automata file and input.
