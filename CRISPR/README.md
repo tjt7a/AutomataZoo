@@ -1,8 +1,9 @@
-# CRISPR
+# CRISPR Benchmark
 
-# How was I generated?
-1. Download code from https://github.com/chunkunbo/CRISPR
-2. Run both example usages in CRISPR/ANML
-3. python anml_gen_casoffinder.py 100.txt 1
-4. python anml_gen_casot.py 100.txt 2 3
-5. rename each STE in each file with a prefix OT or OFF
+## Description
+
+CRISPR/Cas9 is a technology for editing genomes at targeted locations. Identifying targeted locations is challenging and has been accelerated with automata. This benchmark contains two instances of CRISPR identification approaches: CasOFFinder and CasOT.
+
+## Benchmark
+
+This benchmark contains two automata files and inputs.
