@@ -1,8 +1,11 @@
-# Levenshtein
+# Levenshtein Distance Kernel Benchmark
 
-# How was I made?
-1. Used lev program in code directory to generate levenshtein of different sizes
-2. Picked ed=3,5,10 as good benchmark edit distances.
-3. Used profiling to decide length. Looked for a length where average reports are 1/1,000,000 inputs.
-4. Generated 1,000 widgets of these {ed,length} combinations to form each benchmark.
+## Description
 
+The Levenshtein Distance between two strings is the minimum number of edit operations required to convert one string into the other, where the set of edit operations are: insert, delete, substitute. It is a scoring kernel used in a variety of applications.
+
+A Levenshtein Distance kernel automaton is a finite state machine that recognizes strings within a configured edit distance of a comparison string. In order to explore the design space of this kernel, there are three different benchmark instances included in this benchmark.
+
+## Benchmark
+
+This benchmark contains three automata files and inputs.
