@@ -1,12 +1,12 @@
 # AutomataZoo Automata Processing Benchmark Suite
 
-AutomataZoo is an automata processing benchmark suite and is an improved version of [ANMLZoo](https://github.com/jackwadden/ANMLZoo)
+AutomataZoo is an automata processing benchmark suite and is an improved version of [ANMLZoo](https://github.com/jackwadden/ANMLZoo).
 
 If you have any questions or comments, please contact tjt7a@virginia.edu or create an Issue Ticket.
 
 ## Description
 
-High performance automata-processing engines are traditionally evaluated by computing a limited set of regular expression rulesets. These serve as valid, real-World example use cases, but they only represent a small proportion of all automata-based applications. With the recent availability of architectures and software frameworks for automata processing, many new applications have been discovered that benefit from automata processing. These demonstrate a broad variety of characteristics that differ from prior regular expression-based applications, and warrant their own benchmarks.
+High performance automata-processing engines are traditionally evaluated against a limited set of regular expression rulesets. These serve as valid, real-World example use cases, but they only represent a small proportion of all automata-based applications. With the recent availability of architectures and software frameworks for automata processing, many new applications have been discovered that benefit from automata processing. These demonstrate a broad variety of characteristics that differ from prior regular expression-based applications, and warrant their own benchmarks.
 
 ## Improvements over ANMLZoo
 
@@ -26,14 +26,14 @@ AutomataZoo improves upon ANMLZoo in several ways:
 3. **Protomata:** An automata-based application that searches for a set of 1309 protein motif patterns from the PROSITE database.
 4. **Brill Tagging:** A rule-based approach to part-of-speech tagging.
 5. **Random Forest:** A machine learning model based on ensembles of decision trees.
-6. **Hamming Distance:** A string scoring kernel that measures the number of mutations between two strings.
-7. **Levenshtein Distance:** A string scoring kernel that measures the number of edits between two strings.
+6. **Hamming Distance:** A string-scoring kernel that accepts inputs that are within a set hamming distance of a configured pattern.
+7. **Levenshtein Distance:** A string scoring kernel that accepts inputs that are whtin a set edit distance of a configured pattern.
 8. **Sequence Matching:** An automata application that counts sorted sequences of item sets to identify frequently-occurring sets.
 9. **Entity Resolution:** An automata application that attempts to find duplicate entries in a streaming database.
-10. **CRISPR/Cas9:** An automata application that enabled gene editing by identifying targetted locations.
+10. **CRISPR/Cas9:** An automata application that enabled gene editing by identifying targeted locations.
 11. **YARA:** An automata application that discovers malware described in the YARA malware pattern description language.
 12. **File Carving:** An automata application that identifies files in a stream of input bytes.
-13. **Pseudo Random Number Generation (PRNG):** An automata application that models Markov Chains with finite automata to generate a high-throughput PRNG streams.
+13. **Pseudo Random Number Generation (PRNG):** An automata application that models Markov Chains with finite automata to generate high-throughput PRNG streams.
 
 
 ## Benchmark Contributors
