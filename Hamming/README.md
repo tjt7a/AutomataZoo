@@ -1,8 +1,9 @@
-# Hamming
+# Hamming Distance Kernel Benchmark
 
-# How was I made?
-1. Used ham program in code directory to generate hamming automata of different sizes
-2. Picked ed=3,5,10 as good benchmark hamming distances.
-3. Used profiling to decide length. Looked for a length where average reports are 1/1,000,000 inputs.
-4. Generated 1,000 widgets of these {hd,length} combinations to form each benchmark.
+## Description
 
+The Hamming Distance between two strings of the same length is the sum of the number of characters that differ at each position in the pair of strings. It is a scoring kernel used in a variety of applications. A Hamming Distance kernel automaton is a finite state machine that recognizes strings within a configured edit distance of a comparison string. In order to explore the design space of this kernel, there are three different benchmark instances included in this benchmark.
+
+## Benchmark
+
+This benchmark contains three automata files and inputs.
