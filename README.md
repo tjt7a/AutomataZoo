@@ -55,7 +55,7 @@ Matt Grimm<br>
 
 If you use this benchmark suite in a publication, please use the following citation:
 
-Wadden, J., Tracy II, T., Sadredini, E., Wu, L., Bo, C., Du, J., Wei, Y., Wallace, M., Udall, J., Stan, M., and Skadron, K. "ANMLZoo: A Benchmark Suite for Exploring Bottlenecks in Automata Processing Engines and Architectures." 2016 IEEE International Symposium on Workload Characterization (IISWC'18). IEEE, 2018.
+Wadden, J., Tracy II, T., Sadredini, E., Wu, L., Bo, C., Du, J., Wei, Y., Wallace, M., Udall, J., Stan, M., and Skadron, K. "ANMLZoo: A Benchmark Suite for Exploring Bottlenecks in Automata Processing Engines and Architectures." 2018 IEEE International Symposium on Workload Characterization (IISWC'18). IEEE, 2018.
 
 ```
 @inproceedings{ANMLZoo,  
